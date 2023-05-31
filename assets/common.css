@@ -51,7 +51,6 @@
   text-decoration: underline;
   font-weight: bold;
   text-align: right;
-  /* padding: 0.5rem 0.25rem 0.25rem 0.25rem; */
   margin: 0.5rem;
 }
 
@@ -98,7 +97,17 @@
   margin:auto;
   max-height: 25rem;
 }
-
+.container> 
+{
+  display:flex;
+  margin:auto;
+  max-height: 25rem;
+}
+.img-fluid {
+  display:flex;
+  margin:auto;
+  max-height: 25rem;
+}
 /* 
  * Navbar definition
  */
@@ -238,4 +247,47 @@ a:link {
 
 a:visited {
   color: var(--blue-dark);
+}
+@media print
+{    
+    .no-print
+    {
+        display: none !important;
+    }
+    .block  { break-inside: avoid; padding-top: 0.5rem;}
+
+    .block > img {
+      display:flex;
+      margin:auto;
+      max-height: 12rem;
+    }
+    
+    h3,
+    p,
+    a,
+    li,
+    code,
+    textarea,
+    blockquote {
+      font-size: 12px;
+    }
+    .block > h2 {
+      font-size: 1rem;
+    }
+    header  {
+      margin-top: 50%;
+    }
+    .blank-block > p,
+    .block > p {
+      margin: 0;
+      margin-bottom: 0.5rem;
+    }
+    .block > p {
+      padding: 0.125rem 0.125rem;
+    }
+    .blank-block > blockquote,
+    .block > blockquote {
+      padding: 0rem 0.25rem;
+      margin: 0.5rem 0.25rem;
+    }
 }
