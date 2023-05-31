@@ -298,10 +298,13 @@ a:visited {
     }
     h1 {
       text-indent:-9999px;
+      margin-bottom: 0rem;
     }
+    
     h1:before {
       text-indent:0;
       content:'TBT Zine';
       float:left;
     } 
+
 }
