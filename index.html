@@ -97,20 +97,20 @@
       <p>
         After the initial bit of fun dealing with Models, Mechs, UI code, POC implementation of dragging cards into the Unity and a very humorous version of the exported cards.
       </p>
-      <img src="assets/Images/igotaframe.png">
       <blockquote>
         I got very excited to try my frame export code and found a CC0 frame.
       </blockquote>
+      <img src="assets/Images/igotaframe.png">
       <p>
           After collecting all the bits and pieces together in some sort of shape and form it was time to start getting into the data of it all. 
           As usual my initial SQL database layouts missed some things which was only noticed during actually using the data. 
           The main thing I noticed was loading a blob object on each row was a terrible idea. So I moved all the models and textures in their own table. 
           The rest of the tables just point at those tables which allow me loading in all kinds of details of mechs and pilots etc. followed by loading the models as needed was much kinder to memory.     
       </p>
-      <img src="assets/Images/SomeToolsNeeded.png">
       <blockquote>
         Some Tools Were Required
       </blockquote>
+      <img src="assets/Images/SomeToolsNeeded.png">
       <p>
         The choice of treating all the loading logic etc as a managed DLL was made pretty early on, which I've been enjoying alot, along with sweet nothing lies such as "then I can just use the same card logic in another game by dragging on one DLL".
         Which is clearly a soothing lie I tell myself. 

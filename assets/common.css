@@ -250,6 +250,12 @@ a:visited {
 }
 @media print
 {    
+    @page
+    {
+      size: 50;
+      margin: minimal;
+      scale: 97;
+    }
     .no-print
     {
         display: none !important;
@@ -290,4 +296,12 @@ a:visited {
       padding: 0rem 0.25rem;
       margin: 0.5rem 0.25rem;
     }
+    h1 {
+      text-indent:-9999px;
+    }
+    h1:before {
+      text-indent:0;
+      content:'TBT Zine';
+      float:left;
+    } 
 }
