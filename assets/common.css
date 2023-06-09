@@ -308,3 +308,30 @@ a:visited {
     } 
 
 }
+
+.rainbow {
+  font-size:4em;
+  text-transform:uppercase;
+  font-style:italic;
+  letter-spacing:0.1em;
+  text-align:center;
+  padding-right:.6em;
+  margin:30px 0 10px;
+  line-height:1em;
+  overflow-wrap:normal;
+  color:#99e1e6;
+  -webkit-filter:
+    drop-shadow(.1em 0 0 #0066ff)
+    drop-shadow(.1em 0 0 #292cfa)
+    drop-shadow(.1em 0 0 #9b21e1)
+    drop-shadow(.1em 0 0 #dc1991)
+    drop-shadow(.1em 0 0 #eb6227)
+    drop-shadow(.1em 0 0 #e1bb32);
+  filter:
+    drop-shadow(.1em 0 0 #0066ff)
+    drop-shadow(.1em 0 0 #292cfa)
+    drop-shadow(.1em 0 0 #9b21e1)
+    drop-shadow(.1em 0 0 #dc1991)
+    drop-shadow(.1em 0 0 #eb6227)
+    drop-shadow(.1em 0 0 #e1bb32);
+}
