@@ -184,6 +184,7 @@ html {
   background: var(--green);
   background-image: url('grid.svg');
   background-attachment: fixed;
+  max-width: 100vw;
 }
 
 h1,
